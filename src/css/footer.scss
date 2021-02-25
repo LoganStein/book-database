@@ -1,0 +1,9 @@
+@import "./variables";
+
+footer {
+  background: linear-gradient(to bottom right, $paperColor, $paperColor2);
+  margin-top: 10rem;
+  width: 100%;
+  height: 100px;
+  @include flexCenter;
+}

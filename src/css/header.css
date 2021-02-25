@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f3eed9), to(#f4f2e9));
+  background: linear-gradient(to bottom right, #f3eed9, #f4f2e9);
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.header .header-content .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header .header-content .login input {
+  border: 1px lightgrey solid;
+  padding: 0.2rem 0.5rem;
+  width: 30%;
+}
+
+.header .header-content .login button {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+  background-color: #382110;
+  border: 1px solid #382110;
+  color: white;
+}
+
+.header .header-content .login button:active {
+  background-color: #ffd767;
+}
+/*# sourceMappingURL=header.css.map */

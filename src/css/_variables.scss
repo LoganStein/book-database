@@ -1,0 +1,39 @@
+$color1: #f7d259;
+$color2: #f5be0f;
+$color3: #c2970c;
+$color4: #755c07;
+$paperColor: #f4f2e9;
+$paperColor2: #f3eed9;
+$glassStart: rgba(255, 255, 255, 0.7);
+$glassEnd: rgba(255, 255, 255, 0.2);
+$buttonColorDark: #382110;
+$buttonColorLight: #ffd767;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin glassPane() {
+  background: white;
+  background: linear-gradient(to right bottom, $glassStart, $glassEnd);
+  border-radius: 2rem;
+  z-index: 3;
+  background-filter: blur;
+}
+
+@mixin buttonSizing($multiplier) {
+  // $first: 10px * 10px;
+  // padding: 1rem $first;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+@import "./variables";
+
+.header {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to bottom right, $paperColor2, $paperColor);
+  color: black;
+  @include flexCenter;
+  .header-content {
+    @include flexCenter;
+    justify-content: space-between;
+    width: 80%;
+    .login {
+      @include flexCenter;
+      justify-content: space-evenly;
+      input {
+        border: 1px lightgrey solid;
+        padding: 0.2rem 0.5rem;
+        width: 30%;
+      }
+      button {
+        @include buttonSizing(2rem);
+        background-color: $buttonColorDark;
+        border: 1px solid $buttonColorDark;
+        color: white;
+        &:active {
+          background-color: $buttonColorLight;
+        }
+      }
+    }
+  }
+}

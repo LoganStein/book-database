@@ -1,0 +1,26 @@
+@import "./variables";
+
+.book-list {
+  @include flexCenter;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background: radial-gradient($paperColor2, $paperColor);
+  padding: 1rem;
+  width: 80%;
+  justify-content: space-between;
+  // border-radius: 0.75rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  //   @include glassPane;
+}
+
+.book {
+  @include flexCenter;
+  flex-direction: column;
+  cursor: pointer;
+  img {
+    max-width: 100px;
+  }
+}

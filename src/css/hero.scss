@@ -1,0 +1,46 @@
+@import "./variables";
+
+.hero-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.signup {
+  background-color: $paperColor;
+  grid-column: 9/12;
+  border-top: 1px solid lightgrey;
+  padding: 1rem;
+  p {
+    font-size: 1.25rem;
+  }
+  input {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin: 0.25rem;
+    border: 1px solid lightgrey;
+    border-radius: 0.25rem;
+  }
+  button {
+    @include buttonSizing(1);
+    background-color: $buttonColorDark;
+    color: white;
+    margin: 0.25rem;
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+  .button-fine-print {
+    @include flexCenter;
+    justify-content: space-between;
+  }
+  .fine-print {
+    font-size: 0.5rem;
+    width: 60%;
+    opacity: 0.8;
+  }
+}
