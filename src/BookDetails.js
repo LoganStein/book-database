@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams, useHistory } from "react-router-dom";
 import booksData from "./booksData";
+import "./css/bookDetails.css";
+import Header from "./Header";
 
 function BookDetails() {
   const { bookId } = useParams();
@@ -8,9 +10,14 @@ function BookDetails() {
   console.log(thisBook);
   return (
     <div>
-      <img src={thisBook.img} />
-      <h1>{thisBook.name}</h1>
-      <p>{thisBook.description}</p>
+      <Header />
+      <div className="container">
+        <img src={thisBook.img} />
+        <div className="details">
+          <h1>{thisBook.name}</h1>
+          <p>{thisBook.description}</p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,23 @@
+@import "./variables";
+
+.container {
+  @include flexCenter;
+  align-items: flex-start;
+  margin-top: 5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details {
+  @include flexCenter;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  p {
+    width: 80%;
+  }
+}

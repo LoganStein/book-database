@@ -6,7 +6,7 @@ function Book(props) {
     <div className="book">
       <img src={props.src} />
       <h3>{props.title}</h3>
-      <p>{props.desc}</p>
+      <p>by {props.author}</p>
     </div>
   );
 }

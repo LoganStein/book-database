@@ -8,7 +8,7 @@ function BookList() {
   const bookList = booksData.map((book) => {
     return (
       <Link to={`/books/${book.id}`}>
-        <Book title={book.name} src={book.img} desc={book.description} />
+        <Book title={book.name} src={book.img} author={book.author} />
       </Link>
     );
   });

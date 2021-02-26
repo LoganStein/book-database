@@ -36,7 +36,9 @@ function Header() {
   return (
     <div className="header">
       <div className="header-content">
-        <img src="https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png" />
+        <Link to="/">
+          <img src="https://s.gr-assets.com/assets/home/header_logo-8d96d7078a3d63f9f31d92282fd67cf4.png" />
+        </Link>
         <div className="login">
           <input type="text" name="username" placeholder="Username"></input>
           <input type="password" name="password" placeholder="Password"></input>
